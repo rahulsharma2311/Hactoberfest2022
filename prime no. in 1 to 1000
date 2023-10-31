@@ -1,0 +1,26 @@
+#include<iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+ int count=0;
+ int number;
+ cout<<"Enter an Integer:";
+ cin>>number;
+
+  for(int i=1;i<=number;i++)
+  {
+	   if(number%i==0)
+	   {
+			count++;
+	   }
+  }
+     if(count==2)
+  	 cout<<number << " is prime" << endl;
+     else
+     cout<<number <<" is not prime " << endl;
+  system("PAUSE");
+  return(0);
+}
